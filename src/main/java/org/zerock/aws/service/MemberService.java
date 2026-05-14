@@ -28,7 +28,7 @@ public class MemberService {
 
 	@Transactional(readOnly = true)
 	public GetMemberResponse getMember(Long id) {
-		Member member  = memberRepository.findById(id).orElseThrow(() -> new IllegalStateException("not found member"));
+		Member member  = memberRepository.findById(id).orElseThrow(() -> new IllegalStateException("존재하지 않는 멤버입니다"));
 
 		return GetMemberResponse.from(member);
 	}
