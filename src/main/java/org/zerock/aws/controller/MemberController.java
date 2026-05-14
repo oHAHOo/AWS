@@ -26,7 +26,7 @@ public class MemberController {
 		return ResponseEntity.status(HttpStatus.CREATED).body(memberService.createMember(createMemberRequest));
 	}
 
-	@GetMapping("{id}")
+	@GetMapping("/{id}")
 	public ResponseEntity<GetMemberResponse> getMember(@PathVariable Long id) {
 		return ResponseEntity.status(HttpStatus.OK).body(memberService.getMember(id));
 	}
