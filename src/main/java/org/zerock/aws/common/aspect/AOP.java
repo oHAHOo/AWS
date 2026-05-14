@@ -17,7 +17,7 @@ public class AOP {
 	private final HttpServletRequest request;
 
 	@Before("execution(* org.zerock.aws.service.MemberService.*(..))")
-	public void dtoAccess(JoinPoint joinPoint) throws Throwable {
+	public void dtoAccess(JoinPoint joinPoint) {
 
 		String url = request.getRequestURL().toString();
 		String method = request.getMethod();
@@ -25,5 +25,15 @@ public class AOP {
 
 		log.info("[API - LOG] {} {} | method={}",
 			method, url, methodName);
+	}
+
+	@Before("execution(* org.zerock.aws.common.GlobalExceptionHandler.*(..))")
+	public void logException(JoinPoint joinPoint) {
+
+		Object[] args = joinPoint.getArgs();
+		if (args.length > 0 && args[0] instanceof Exception e) {
+			log.error("[API - ERROR] {} | message={}",
+				e.getClass().getSimpleName(), e.getMessage(), e);
+		}
 	}
 }

@@ -11,12 +11,10 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import lombok.extern.slf4j.Slf4j;
 
 @RestControllerAdvice
-@Slf4j
 public class GlobalExceptionHandler {
 
 	@ExceptionHandler(IllegalStateException.class)
 	public ResponseEntity<Map<String,Object>> handleIllegalStateException(IllegalStateException ex) {
-		log.error("[API - ERROR] {} : {}", ex.getClass().getSimpleName(), ex.getMessage(), ex);
 		HttpStatus status = HttpStatus.NOT_FOUND;
 		return getErrorResponse(status, ex.getMessage());
 	}
