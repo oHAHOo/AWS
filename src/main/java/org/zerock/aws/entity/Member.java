@@ -26,10 +26,16 @@ public class Member {
 	private int age;
 	@Column
 	private String mbti;
+	@Column
+	private String profileImageUrl;
 
 	public Member(String name, int age, String mbti) {
 		this.name = name;
 		this.age = age;
 		this.mbti = mbti;
+	}
+
+	public void updateProfileImageUrl(String profileImageUrl) {
+		this.profileImageUrl = profileImageUrl;
 	}
 }
