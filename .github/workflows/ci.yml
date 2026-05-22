@@ -35,7 +35,9 @@ jobs:
             ${{ runner.os }}-gradle-
 
       - name: Run tests
-        run: ./gradlew test
+        run: |
+          chmod +x ./gradlew
+          ./gradlew test
 
       - name: Build JAR
         run: ./gradlew bootJar
