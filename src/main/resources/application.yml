@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: local
+  servlet:
+    multipart:
+      max-file-size: 10MB
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health, info"
