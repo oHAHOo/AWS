@@ -30,3 +30,6 @@ management:
 
 info:
   team-name: ${team-name}
+
+cloudfront:
+  domain: https://d2jc2it054n1b2.cloudfront.net
