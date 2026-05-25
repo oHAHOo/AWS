@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 import org.zerock.aws.entity.Member;
 import org.zerock.aws.repository.MemberRepository;
+
 import io.awspring.cloud.s3.S3Template;
 import lombok.RequiredArgsConstructor;
 
@@ -24,7 +25,7 @@ public class S3Service {
 	@Value("${spring.cloud.aws.s3.bucket}")
 	private String bucket;
 
-	@Value("${cloudfront.domain}")          // ✅ 추가
+	@Value("${cloudfront.domain}")
 	private String cloudFrontDomain;
 
 	public String upload(Long id, MultipartFile file) {
