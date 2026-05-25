@@ -1,6 +1,5 @@
 package org.zerock.aws.controller;
 
-import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -13,7 +12,7 @@ import org.zerock.aws.dto.FileDownloadUrlResponse;
 import org.zerock.aws.dto.FileUploadResponse;
 import org.zerock.aws.service.S3Service;
 
-import java.net.URL;
+import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequiredArgsConstructor
@@ -30,7 +29,7 @@ public class FileController {
 
 	@GetMapping("/{id}/profile-image")
 	public ResponseEntity<FileDownloadUrlResponse> getDownloadUrl(@PathVariable Long id, @RequestParam String key) {
-		URL url = s3Service.getDownloadUrl(id, key);
-		return ResponseEntity.ok(new FileDownloadUrlResponse(url.toString()));
+		String url = s3Service.getDownloadUrl(id, key);
+		return ResponseEntity.ok(new FileDownloadUrlResponse(url));
 	}
 }
