@@ -26,3 +26,23 @@
 
 - 접근 성공 스크린샷
 - ![LV 3 - 프로필 사진 기능 추가와 권한 관리 - 스크린샷.PNG](image/LV%203%20-%20%ED%94%84%EB%A1%9C%ED%95%84%20%EC%82%AC%EC%A7%84%20%EA%B8%B0%EB%8A%A5%20%EC%B6%94%EA%B0%80%EC%99%80%20%EA%B6%8C%ED%95%9C%20%EA%B4%80%EB%A6%AC%20-%20%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7.PNG)
+
+## LV 4 - Docker & CI/CD 파이프라인 구축
+### 1. Github Actions 성공 이미지
+![LV 4 - Docker & CI CD 파이프라인 구축 - Github Actions 성공 이미지.PNG](image/LV%204%20-%20Docker%20%26%20CI%20CD%20%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8%20%EA%B5%AC%EC%B6%95%20-%20Github%20Actions%20%EC%84%B1%EA%B3%B5%20%EC%9D%B4%EB%AF%B8%EC%A7%80.PNG)
+
+### 2. EC2 터미널 이미지
+![LV 4 - Docker & CI CD 파이프라인 구축 - EC2 터미널 이미지.PNG](image/LV%204%20-%20Docker%20%26%20CI%20CD%20%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8%20%EA%B5%AC%EC%B6%95%20-%20EC2%20%ED%84%B0%EB%AF%B8%EB%84%90%20%EC%9D%B4%EB%AF%B8%EC%A7%80.PNG)
+
+## LV 5 - 고가용성 아키텍처와 보안 도메인 연결 (ALB + ASG + HTTPS)
+### HTTPS 적용된 도메인 URL
+https://api.ina3700.click/actuator/health
+![LV 5 - 고가용성 아키텍처와 보안 도메인 연결 (ALB + ASG + HTTPS) - HTTPS 적용된 도메인 URL.PNG](image/LV%205%20-%20%EA%B3%A0%EA%B0%80%EC%9A%A9%EC%84%B1%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%EC%99%80%20%EB%B3%B4%EC%95%88%20%EB%8F%84%EB%A9%94%EC%9D%B8%20%EC%97%B0%EA%B2%B0%20%28ALB%20%2B%20ASG%20%2B%20HTTPS%29%20-%20HTTPS%20%EC%A0%81%EC%9A%A9%EB%90%9C%20%EB%8F%84%EB%A9%94%EC%9D%B8%20URL.PNG)
+
+### Target Group(대상 그룹) 이미지
+![LV 5 - 고가용성 아키텍처와 보안 도메인 연결 (ALB + ASG + HTTPS) - Target Group(대상 그룹) 이미지.PNG](image/LV%205%20-%20%EA%B3%A0%EA%B0%80%EC%9A%A9%EC%84%B1%20%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98%EC%99%80%20%EB%B3%B4%EC%95%88%20%EB%8F%84%EB%A9%94%EC%9D%B8%20%EC%97%B0%EA%B2%B0%20%28ALB%20%2B%20ASG%20%2B%20HTTPS%29%20-%20Target%20Group%28%EB%8C%80%EC%83%81%20%EA%B7%B8%EB%A3%B9%29%20%EC%9D%B4%EB%AF%B8%EC%A7%80.PNG)
+
+## LV 6 - 글로벌 성능 최적화 (CloudFront CDN)
+### CloudFront 이미지 URL
+https://d2jc2it054n1b2.cloudfront.net/uploads/1340089a-6e0d-41b4-810f-1a1e2e84b14c_apple.jpg
+![LV 6 - 글로벌 성능 최적화 (CloudFront CDN) - CloudFront 이미지 URL.PNG](image/LV%206%20-%20%EA%B8%80%EB%A1%9C%EB%B2%8C%20%EC%84%B1%EB%8A%A5%20%EC%B5%9C%EC%A0%81%ED%99%94%20%28CloudFront%20CDN%29%20-%20CloudFront%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20URL.PNG)
